@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg-terraform" {
-  name        = "module-terraform"
+  name        = var.name_group
   description = "SG criado pelo terraform"
   vpc_id      = var.aws_vpc_id
 
